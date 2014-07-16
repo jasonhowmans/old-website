@@ -1,0 +1,24 @@
+// .site-container is the lowest level wrapper
+.site-container {
+	box-sizing: border-box;
+}
+
+// .blocks exist to divide content into managable sections
+.block {
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+
+	// add's padding to left/right of .block
+	&.padded {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+// .rows are used to divide content into vertical segments
+.row {
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+}

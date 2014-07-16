@@ -1,0 +1,27 @@
+.home-wrapper {
+
+	// howdy block
+	.brief-howdy {
+		text-align: center;
+
+		.hello-heading {
+			color: $clr-yellow;
+		}
+
+		.more-info { margin: 0; }
+	}
+
+
+	// item stream
+	.item-stream {
+		.post-link {
+			> a { color: white; }
+		}
+
+		.post-heading {
+			font-family: $font-serif;
+			font-weight: 300;
+		}
+	}
+
+}
