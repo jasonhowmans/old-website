@@ -1,26 +1,76 @@
 .home-wrapper {
 
+	// — — — — — — — — — — — — — — — — — — — —
 	// howdy block
+	// — — — — — — — — — — — — — — — — — — — —
 	.brief-howdy {
+		$-clr-bg: #FB3D3D;
+		$-clr-h1: white;
+		$-clr-p: white;
+
+		padding-bottom: 2.222rem;
+		background: $-clr-bg;
+		color: white;
 		text-align: center;
 
 		.hello-heading {
-			color: $clr-yellow;
+			margin: 0 0 1rem 0;
+			color: $-clr-h1;
 		}
 
-		.more-info { margin: 0; }
+		a { color: $-clr-p; text-decoration: underline; }
+
+		.more-info { margin: 0; color: $-clr-p; }
+	}
+
+	// — — — — — — — — — — — — — — — — — — — —
+	// social networks and other social jazz
+	// — — — — — — — — — — — — — — — — — — — —
+	.socialism {
+		$-clr-bg: #653131;
+		$-clr-text: #E29C9C;
+
+		background: $-clr-bg;
+
+		.find-me-heading {
+			color: $-clr-text;
+		}
 	}
 
 
+	// — — — — — — — — — — — — — — — — — — — —
 	// item stream
+	// — — — — — — — — — — — — — — — — — — — —
 	.item-stream {
+		$-clr-link: #5D5D5D;
+
+		// link to a post
 		.post-link {
-			> a { color: white; }
+			box-sizing: border-box;
+			padding: 18px;
+			border-bottom: 1px solid #DCDCDC;
 		}
 
 		.post-heading {
+			margin: 0;
+			color: $-clr-link;
 			font-family: $font-serif;
 			font-weight: 300;
+		}
+
+		// meta info
+		.post-meta {
+			margin-bottom: .667rem;
+
+			.created-date,
+			.reading-time {
+				display: inline-block;
+				color: lighten( $clr-text, 35% );
+				font-style: italic;
+				font-weight: 300;
+			}
+
+			.reading-time { float: right; }
 		}
 	}
 

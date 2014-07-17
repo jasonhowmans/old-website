@@ -6,12 +6,15 @@ body {
 	height: 100%;
 	background: $clr-base;
 	color: $clr-text;
-	font: 400 18px/1.45 $font-sans;
+	font: 300 18px/1.45 $font-sans;
 }
 
 // .site-head
 .site-head {
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: $index-masthead;
 	box-sizing: border-box;
 	width: 100%;
 	padding: 1rem;
@@ -19,4 +22,9 @@ body {
 	font-weight: 300;
 
 	> a { color: $clr-text; }
+
+	// light on dark variation
+	&.l-o-d {
+		> a { color: white; }
+	}
 }
