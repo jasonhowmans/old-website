@@ -4,7 +4,7 @@
 	// howdy block
 	// — — — — — — — — — — — — — — — — — — — —
 	.brief-howdy {
-		$-clr-bg: #FB3D3D;
+		$-clr-bg: #F5A45B;
 		$-clr-h1: white;
 		$-clr-p: white;
 
@@ -21,20 +21,6 @@
 		a { color: $-clr-p; text-decoration: underline; }
 
 		.more-info { margin: 0; color: $-clr-p; }
-	}
-
-	// — — — — — — — — — — — — — — — — — — — —
-	// social networks and other social jazz
-	// — — — — — — — — — — — — — — — — — — — —
-	.socialism {
-		$-clr-bg: #653131;
-		$-clr-text: #E29C9C;
-
-		background: $-clr-bg;
-
-		.find-me-heading {
-			color: $-clr-text;
-		}
 	}
 
 
