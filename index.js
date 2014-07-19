@@ -16,7 +16,6 @@ app.set('view engine', 'hbs');
 
 // init the blog
 blog.init();
-var posts = blog.list_posts();
 
 // route: home
 app.get('/', function(req,res) {
