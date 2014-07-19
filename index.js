@@ -1,6 +1,7 @@
 var express = require('express'),
 		app			= express(),
 		hbs			= require('express3-handlebars'),
+		blog		= require('./lib/blog'),
 		port 		= process.env.PORT || 2014;
 
 // where the assets at?
@@ -12,6 +13,10 @@ app.engine('hbs', hbs({
 	defaultLayout: 'layout.hbs'
 }));
 app.set('view engine', 'hbs');
+
+// init the blog
+blog.init();
+var posts = blog.list_posts();
 
 // route: home
 app.get('/', function(req,res) {
