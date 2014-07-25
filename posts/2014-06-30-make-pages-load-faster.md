@@ -1,5 +1,6 @@
 ---
 title: How to make pages load 90% faster
+cover: path/to/image.png
 ---
 blah blah *blahhh*
 
