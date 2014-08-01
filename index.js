@@ -1,7 +1,8 @@
 var express = require('express'),
 		app			= express(),
 		hbs			= require('express3-handlebars'),
-		blog		= require('./lib/blog'),
+		Blog		= require('./lib/blog'),
+		routes	= require('./routes'),
 		port 		= process.env.PORT || 2014;
 
 // where the assets at?
@@ -14,12 +15,11 @@ app.engine('hbs', hbs({
 }));
 app.set('view engine', 'hbs');
 
-// init the blog
-blog.init();
-
-// route: home
-app.get('/', function(req,res) {
-	res.render('home');
+// initialise the blog
+var blog = new Blog().init();
+// when the blog is ready, pass to routing
+blog.on( 'ready', function() {
+	routes( app, this );
 });
 
 console.log('server running @ http://localhost:'+port);

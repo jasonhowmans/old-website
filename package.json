@@ -16,6 +16,7 @@
     "marked": "^0.3.2"
   },
   "devDependencies": {
+    "chai": "^1.9.1",
     "gulp": "^3.8.6",
     "gulp-autoprefixer": "0.0.8",
     "gulp-concat": "^2.3.3",
