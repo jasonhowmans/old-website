@@ -18,6 +18,30 @@ describe('Blog', function() {
     })
   })
 
+  it('should be able to exist in many instances', function() {
+    var blog_one = (new Blog());
+    var blog_two = (new Blog());
+    expect(blog_one).to.be.instanceof(Blog);
+    expect(blog_two).to.be.instanceof(Blog);
+  })
+
+  ///
+  // init()
+  ///
+  describe('#init()', function() {
+    it('should return object', function() {
+      var blog_init = (new Blog()).init();
+      expect(blog_init).to.be.a('object');
+    })
+
+    it('should inherit from EventEmitter', function() {
+      expect(blog.on).to.be.a('function');
+    });
+  })
+
+  ///
+  //  posts()
+  ///
   describe('#posts()', function() {
     it('should return posts data as an array of objects', function() {
       var posts = blog.posts();
@@ -37,6 +61,9 @@ describe('Blog', function() {
     })
   })
 
+  ///
+  // render()
+  ///
   describe('#render()', function() {
     it('should take two arguments, filename {string}, and callback {function}', function(done) {
       var filename = '2014-08-01-hello-world.md';
