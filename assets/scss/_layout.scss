@@ -1,32 +1,32 @@
 // .site-container is the lowest level wrapper
 .site-container {
-	@extend %cf;
-	box-sizing: border-box;
+  @extend %cf;
+  box-sizing: border-box;
 }
 
 // .blocks divide different content into sections
 .block {
-	@extend %cf;
-	position: relative;
-	box-sizing: border-box;
-	width: 100%;
+  @extend %cf;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
 
-	// if this is the first block, add padding to compensate for top bar
-	&.alpha {
-		padding-top: 5.0623rem;
-	}
+  // if this is the first block, add padding to compensate for top bar
+  &.alpha {
+    padding-top: 5.0623rem;
+  }
 
-	// add padding to left & right of .block
-	&.padded {
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
+  // add padding to left & right of .block
+  &.padded {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 // .rows divide related content into vertical sections
 .row {
-	@extend %cf;
-	position: relative;
-	box-sizing: border-box;
-	width: 100%;
+  @extend %cf;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
 }
