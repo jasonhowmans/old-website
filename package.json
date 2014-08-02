@@ -4,7 +4,7 @@
   "description": "Pile of stuff that comes from the mind of jason howmans",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R spec"
   },
   "author": "Jason Howmans (@jhwmns)",
   "license": "ISC",
